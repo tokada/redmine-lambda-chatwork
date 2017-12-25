@@ -4,4 +4,4 @@
 * ステータス: <%= event.issue.status.name %>
 * 優先度: <%= event.issue.priority.name %>
 <% if (event.issue.assignee) { -%>* 担当者: <%= event.issue.assignee.lastname %> <%= event.issue.assignee.firstname %><% } -%>
-[code]<%= event.issue.description %>[/code][/info]
+[code]<%- event.issue.description %>[/code][/info]

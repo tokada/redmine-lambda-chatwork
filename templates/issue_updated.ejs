@@ -5,7 +5,7 @@
 <%= detail.prop_key %> を <%= detail.old_value %> から <%= detail.value %> に変更
 <% } -%>
 <% }); -%>
-<% if (event.journal.notes != "") { %>[code]<%= event.journal.notes %>[/code]<% } %>[hr]<%= event.issue.project.name %> <%= event.issue.tracker.name %> #<%= event.issue.id %>:<%= event.issue.subject %>
+<% if (event.journal.notes != "") { %>[code]<%- event.journal.notes %>[/code]<% } %>[hr]<%= event.issue.project.name %> <%= event.issue.tracker.name %> #<%= event.issue.id %>:<%= event.issue.subject %>
 <%= event.url %>
 * 作成者: <%= event.issue.author.lastname %> <%= event.issue.author.firstname %>
 * ステータス: <%= event.issue.status.name %>
