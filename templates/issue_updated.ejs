@@ -1,4 +1,4 @@
-[info][title]チケット #<%= event.issue.id %> が <%= event.issue.author.lastname %> <%= event.issue.author.firstname %> によって更新されました。[/title]<% event.journal.details.forEach(function(detail){ -%>
+[info][title]チケット #<%= event.issue.id %> が <%= event.journal.author.lastname %> <%= event.journal.author.firstname %> によって更新されました。[/title]<% event.journal.details.forEach(function(detail){ -%>
 <% if (detail.prop_key == 'description') { -%>
 説明 を更新
 <% } else { -%>
