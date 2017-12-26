@@ -1,5 +1,6 @@
 [info][title]チケット #<%= event.issue.id %> が <%= event.journal.author.lastname %> <%= event.journal.author.firstname %> によって更新されました。[/title]<% event.journal.details.forEach(function(detail){ -%>
-<% if (detail.prop_key == 'description') { -%>
+<% if (detail.string) { -%><%= detail.string %>
+<% } else if (detail.prop_key == 'description') { -%>
 説明 を更新
 <% } else { -%>
 <%= detail.prop_key %> を <%= detail.old_value %> から <%= detail.value %> に変更

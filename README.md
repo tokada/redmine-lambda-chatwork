@@ -6,7 +6,7 @@ Post Redmine events to ChatWork using AWS Lambda through Amazon API Gateway.
 ## Preparation
 
 Install Redmine WebHook Plugin to your Redmine.
-https://github.com/suer/redmine_webhook
+https://github.com/tokada/redmine_webhook
 
 ## Install
 
