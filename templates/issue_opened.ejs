@@ -1,4 +1,4 @@
-[info][title]チケット #<%= event.issue.id %> が <%= event.issue.author.lastname %> <%= event.issue.author.firstname %> によって報告されました。[/title]<%= event.issue.project.name %> <%= event.issue.tracker.name %> #<%= event.issue.id %>:<%= event.issue.subject %>
+[info][title]チケット #<%= event.issue.id %> が <%= event.issue.author.lastname %> <%= event.issue.author.firstname %> によって報告されました。[/title]<%= event.issue.project.name %> <%= event.issue.tracker.name %> #<%= event.issue.id %>: <%= event.issue.subject %>
 <%= event.url %>
 * 作成者: <%= event.issue.author.lastname %> <%= event.issue.author.firstname %>
 * ステータス: <%= event.issue.status.name %>
